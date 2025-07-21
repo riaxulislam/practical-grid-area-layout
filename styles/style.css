@@ -1,0 +1,11 @@
+.header,
+.nav,
+.main,
+.sidebar,
+.advertise,
+.footer {
+  background: bisque;
+  border: tomato;
+  padding: 20px;
+  border-radius: 2px;
+}
