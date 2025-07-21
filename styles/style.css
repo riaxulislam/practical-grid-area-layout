@@ -5,7 +5,55 @@
 .advertise,
 .footer {
   background: bisque;
-  border: tomato;
+  border: tomato solid 1px;
   padding: 20px;
-  border-radius: 2px;
+  border-radius: 10px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.main {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.advertise {
+  grid-area: advertise;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  gap: 10px;
+  display: grid;
+  grid-template-areas: 
+  "header header header header"
+  "nav main main sidebar"
+  "nav main main advertise"
+  "footer footer footer footer";
+}
+
+
+@media screen and (max-width: 576px){
+  .container{
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "sidebar"
+    "advertise"
+    'footer'
+    ;
+  }
 }
